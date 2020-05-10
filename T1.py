@@ -15,7 +15,7 @@ def cpu_temp():
 
 
 while True:
-    with open('plik.csv', 'a', encoding='utf-8', newline='') as tempfile:
+    with open('Temp.csv', 'a', encoding='utf-8', newline='') as tempfile:
         csvwriter = csv.writer(tempfile, delimiter=',')
         CPU = int(cpu_temp()) / 1000
         dzien = date.today()
